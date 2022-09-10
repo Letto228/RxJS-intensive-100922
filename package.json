@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:ws": "node ./serve/ws.serve",
+    "start:ws": "node ./server/ws.server",
     "start:theory": "module=0-theory moduleName=Теория  node ./node_modules/.bin/webpack  serve",
     "test:theory": "module=0-theory node ./node_modules/.bin/karma start",
     "start:task-1": "module=1-swipe moduleName='Функционал Swipe'  node ./node_modules/.bin/webpack  serve",
