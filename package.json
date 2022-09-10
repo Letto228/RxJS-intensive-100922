@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:ws": "node ./serve/ws.serve",
     "start:theory": "module=0-theory moduleName=Теория  node ./node_modules/.bin/webpack  serve",
     "test:theory": "module=0-theory node ./node_modules/.bin/karma start",
     "start:task-1": "module=1-swipe moduleName='Функционал Swipe'  node ./node_modules/.bin/webpack  serve",
@@ -58,7 +59,7 @@
     "jquery": "^3.6.0",
     "node-static": "^0.7.11",
     "popper.js": "^1.16.1",
-    "rxjs": "^7.0.1",
+    "rxjs": "^7.5.6",
     "ws": "^8.6.0"
   }
 }
