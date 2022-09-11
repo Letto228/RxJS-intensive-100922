@@ -154,6 +154,34 @@
 //     })
 // };
 // ________________Долг
+// ________________Долг Решение
+// class DSubscriber extends Subscriber<number> {
+    //     next(value: number): void {
+    //         super.next(value * 2);
+    //     }
+    // }
+    
+    // function double(source$: Observable<number>): Observable<number>  {
+    //     return new Observable<number>(subscriber => {
+    //         // source$.subscribe(new DSubscriber(subscriber));
+    //         source$.subscribe({
+    //             ...subscriber,
+    //             next: value => {
+    //                 subscriber.next(value * 2)
+    //             }
+    //         });
+    //     })
+    // };
+    
+    // interval(1000).pipe(double, take(3)).subscribe({
+    //     next(value) {
+    //         console.log(value)
+    //     },
+    //     complete() {
+    //         console.log("com")
+    //     },
+    // });
+// ________________Долг Решение
 
 // function pipe(
 //     ...operators: Array<(source$: Observable<any>) => Observable<any>>
