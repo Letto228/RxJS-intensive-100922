@@ -10,9 +10,9 @@
 // ).subscribe(console.log);
 
 // ajax({
-//     url: 'https://learn.javascript.ru/courses/groups/api/participants?key=1lesw5i',
-//     crossDomain: true,
-//     method: 'GET',
+    // url: 'https://learn.javascript.ru/courses/groups/api/participants?key=1lesw5i',
+    // crossDomain: true,
+    // method: 'GET',
 // }).subscribe({
 //     complete: () => {
 //         console.log('COMPLETE');
