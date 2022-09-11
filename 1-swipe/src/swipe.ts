@@ -24,7 +24,7 @@ import { filter, fromEvent, map, merge, Observable, pipe, zip } from "rxjs";
 // );
 
 // Alt
-function getXPosition$(source$: Observable<MouseEvent | TouchEvent>): Observable<number> {
+export function getXPosition$(source$: Observable<MouseEvent | TouchEvent>): Observable<number> {
     return source$.pipe(
         map(event => event instanceof MouseEvent
             ? event.clientX
