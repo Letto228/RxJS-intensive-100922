@@ -12,7 +12,10 @@ export function skipLimit<T>(skip: number, limit: number): (source$: Observable<
 
         return new Observable<T>(subscriber => {
             const subscription = source$.subscribe({
-                ...subscriber,
+                complete: subscriber.complete.bind(subscriber), // or
+                error: () => {
+                    subscriber.complete();
+                }, // or
                 next: value => {
                     const borderRight = interval * (skip + limit);
                     const borderLeft = borderRight - limit;
