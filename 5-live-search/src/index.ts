@@ -16,6 +16,5 @@ fromEvent<InputEvent>(inputElement, 'input')
         map(({items}) => requestToHtmlString(items)),
     )
     .subscribe(htmlString => {
-        console.log(htmlString);
         containerElement.innerHTML = htmlString;
     });
